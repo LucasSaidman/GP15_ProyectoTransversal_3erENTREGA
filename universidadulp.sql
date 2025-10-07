@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 05-10-2025 a las 02:33:03
+-- Tiempo de generación: 08-10-2025 a las 01:44:14
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -46,7 +46,7 @@ CREATE TABLE `alumno` (
 
 CREATE TABLE `inscripcion` (
   `idInscripto` int(11) NOT NULL,
-  `anio_inscripcion` year(4) NOT NULL,
+  `anioInscripcion` year(4) NOT NULL,
   `nota` decimal(3,2) DEFAULT NULL,
   `idAlumno` int(11) NOT NULL,
   `idMateria` int(11) NOT NULL

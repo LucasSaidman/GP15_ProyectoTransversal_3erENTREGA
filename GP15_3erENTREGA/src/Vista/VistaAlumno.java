@@ -52,7 +52,6 @@ public class VistaAlumno extends javax.swing.JInternalFrame {
 
         cb_regular.addItemListener(e -> reglasHabilitacion());
 
-        // click en tabla
         tabla_alumnos.addMouseListener(new java.awt.event.MouseAdapter() {
             @Override public void mouseClicked(java.awt.event.MouseEvent e) {
                 tablaClick();
@@ -210,6 +209,8 @@ public class VistaAlumno extends javax.swing.JInternalFrame {
             return null;
         }
         
+        
+        
         String v = sel.toString().trim();
         if (v.equalsIgnoreCase("Si")) {
             return true;
@@ -220,6 +221,15 @@ public class VistaAlumno extends javax.swing.JInternalFrame {
         }
         
         return null;
+    }
+    
+    private boolean esSoloTexto(String texto) {
+        for (char c : texto.toCharArray()) {
+            if (!Character.isLetter(c) && !Character.isSpaceChar(c)) {
+                return false;
+            }
+        }
+        return true;
     }
 
     private void msg(String s){
@@ -479,10 +489,24 @@ public class VistaAlumno extends javax.swing.JInternalFrame {
             return;
         }
         
+        if (!esSoloTexto(apellido)) {
+            JOptionPane.showMessageDialog(this, "El apellido solo puede contener letras");
+            txt_apellido.requestFocus();
+            txt_apellido.selectAll();
+            return;
+        }
+        
         String nombre = txt_nombre.getText().trim();
         if(nombre.isEmpty()) {
             JOptionPane.showMessageDialog(this, "Complete Nombre");
             txt_nombre.requestFocus();
+            return;
+        }
+        
+        if (!esSoloTexto(nombre)) {
+            JOptionPane.showMessageDialog(this, "El nombre solo puede contener letras");
+            txt_nombre.requestFocus();
+            txt_nombre.selectAll();
             return;
         }
         

@@ -46,7 +46,7 @@ public class VistaMaterias extends javax.swing.JInternalFrame {
             }
         };
         txt_nombre.addKeyListener(ka);
-
+        
         cb_cuatrimestre.addItemListener(e -> reglasHabilitacion());
         cb_estado.addItemListener(e -> reglasHabilitacion());
 
@@ -237,6 +237,15 @@ public class VistaMaterias extends javax.swing.JInternalFrame {
         }
     }
 
+    private boolean esSoloTexto(String texto) {
+        for (char c : texto.toCharArray()) {
+            if (!Character.isLetter(c) && !Character.isSpaceChar(c)) {
+                return false;
+            }
+        }
+        return true;
+    }
+    
     private void msg(String s){
         JOptionPane.showMessageDialog(this, s);
     }
@@ -498,6 +507,12 @@ public class VistaMaterias extends javax.swing.JInternalFrame {
             return;
         }
 
+        if (!esSoloTexto(nombre)) {
+            JOptionPane.showMessageDialog(this, "El nombre de la materia solo debe contener letras");
+            txt_nombre.requestFocus();
+            txt_nombre.selectAll();
+            return;
+        }
         Integer cuat = getCuatrimestreFromCombo();
         if (cuat == null) {
             msg("Seleccione Cuatrimestre");

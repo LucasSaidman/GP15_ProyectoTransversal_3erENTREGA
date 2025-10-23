@@ -518,6 +518,13 @@ public class VistaAlumno extends javax.swing.JInternalFrame {
             return;
         }
         
+        if (fn.isAfter(java.time.LocalDate.now())) {
+            JOptionPane.showMessageDialog(this, "La fecha de nacimiento no puede ser posterior a la fecha actual");
+            txt_fc.requestFocus();
+            txt_fc.selectAll();
+            return;
+        }
+        
         Boolean regular = getRegularCombo();
         if(regular == null) {
             JOptionPane.showMessageDialog(this, "Seleccione Regular: Si o No");

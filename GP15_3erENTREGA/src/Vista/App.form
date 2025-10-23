@@ -9,12 +9,12 @@
             <Property name="text" type="java.lang.String" value="Alumno"/>
           </Properties>
           <SubComponents>
-            <MenuItem class="javax.swing.JMenuItem" name="jmi_agregar_alumno">
+            <MenuItem class="javax.swing.JMenuItem" name="jmi_gestion_alumnos">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Agregar Alumno"/>
+                <Property name="text" type="java.lang.String" value="Gestion Alumnos"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jmi_agregar_alumnoActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jmi_gestion_alumnosActionPerformed"/>
               </Events>
             </MenuItem>
           </SubComponents>
@@ -24,12 +24,12 @@
             <Property name="text" type="java.lang.String" value="Materia"/>
           </Properties>
           <SubComponents>
-            <MenuItem class="javax.swing.JMenuItem" name="jmi_agregar_materia">
+            <MenuItem class="javax.swing.JMenuItem" name="jmi_gestion_materias">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Agregar Materia"/>
+                <Property name="text" type="java.lang.String" value="Gestion Materias"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jmi_agregar_materiaActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jmi_gestion_materiasActionPerformed"/>
               </Events>
             </MenuItem>
           </SubComponents>
@@ -39,21 +39,29 @@
             <Property name="text" type="java.lang.String" value="Registro"/>
           </Properties>
           <SubComponents>
-            <MenuItem class="javax.swing.JMenuItem" name="jmi_inscripcion_materias">
+            <MenuItem class="javax.swing.JMenuItem" name="jmi_gestion_inscripciones">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Inscripcion a Materias"/>
+                <Property name="text" type="java.lang.String" value="Gestion Inscripciones"/>
                 <Property name="toolTipText" type="java.lang.String" value=""/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jmi_inscripcion_materiasActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jmi_gestion_inscripcionesActionPerformed"/>
               </Events>
             </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="jmi_lista">
+            <MenuItem class="javax.swing.JMenuItem" name="jmi_cargar_notas">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Lista"/>
+                <Property name="text" type="java.lang.String" value="Cargar Notas"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jmi_listaActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jmi_cargar_notasActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jmi_lista_inscripciones">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Lista Inscripciones"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jmi_lista_inscripcionesActionPerformed"/>
               </Events>
             </MenuItem>
           </SubComponents>

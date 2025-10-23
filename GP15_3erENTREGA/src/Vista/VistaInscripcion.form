@@ -50,57 +50,53 @@
               <Component id="lb_titulo" alignment="1" max="32767" attributes="0"/>
               <Group type="102" alignment="1" attributes="0">
                   <EmptySpace pref="21" max="32767" attributes="0"/>
-                  <Component id="sp_tabla_alumno_materia" min="-2" pref="946" max="-2" attributes="0"/>
+                  <Component id="sp_tabla_gestion_inscripciones" min="-2" pref="946" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
               </Group>
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="196" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
                           <Component id="btn_nuevo" min="-2" pref="150" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="btn_guardar" min="-2" pref="190" max="-2" attributes="0"/>
+                          <Component id="btn_inscribir" min="-2" pref="190" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="btn_eliminar" min="-2" pref="190" max="-2" attributes="0"/>
+                          <Component id="btn_anular_inscripcion" min="-2" pref="190" max="-2" attributes="0"/>
                       </Group>
-                      <Group type="102" attributes="0">
+                      <Group type="102" alignment="1" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" attributes="0">
-                                          <Component id="lb_dni" min="-2" pref="130" max="-2" attributes="0"/>
-                                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                                          <Component id="txt_dni" min="-2" pref="250" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Group type="102" alignment="1" attributes="0">
-                                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                              <Component id="lb_nombre" pref="130" max="32767" attributes="0"/>
-                                              <Component id="jLabel1" max="32767" attributes="0"/>
-                                          </Group>
-                                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                              <Component id="txt_nombre" pref="250" max="32767" attributes="0"/>
-                                              <Component id="jTextField1" max="32767" attributes="0"/>
-                                          </Group>
-                                      </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="lb_dni" min="-2" pref="130" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="txt_dni" min="-2" pref="250" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <Component id="lb_nombre" min="-2" pref="130" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="txt_nombre" min="-2" pref="250" max="-2" attributes="0"/>
                                   </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="lb_materia" min="-2" pref="130" max="-2" attributes="0"/>
+                                  <Group type="102" attributes="0">
+                                      <Component id="lb_apellido" max="32767" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="txt_apellido" min="-2" pref="250" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="cb_materias" alignment="0" min="-2" pref="398" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <Component id="lb_materias" min="-2" pref="130" max="-2" attributes="0"/>
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
                                       <Component id="rb_inscripto" min="-2" pref="123" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="rb_no_inscripto" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
-                              <Component id="cb_materias" min="-2" pref="398" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace max="32767" attributes="0"/>
+                          <EmptySpace min="-2" pref="78" max="-2" attributes="0"/>
                           <Component id="btn_buscar" min="-2" pref="90" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="btn_salir" min="-2" pref="150" max="-2" attributes="0"/>
-                  <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -110,10 +106,9 @@
                   <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                   <Component id="lb_titulo" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                  <Component id="sp_tabla_alumno_materia" min="-2" pref="110" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="70" max="-2" attributes="0"/>
+                  <Component id="sp_tabla_gestion_inscripciones" min="-2" pref="110" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="btn_buscar" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
                       <Group type="102" alignment="0" attributes="0">
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="lb_dni" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
@@ -125,25 +120,26 @@
                               <Component id="lb_nombre" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
                           </Group>
                       </Group>
+                      <Component id="btn_buscar" min="-2" pref="60" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jLabel1" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                      <Component id="jTextField1" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                      <Component id="lb_apellido" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                      <Component id="txt_apellido" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="lb_materia" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                      <Component id="lb_materias" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
                       <Component id="rb_inscripto" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
                       <Component id="rb_no_inscripto" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="cb_materias" min="-2" pref="30" max="-2" attributes="0"/>
-                  <EmptySpace pref="46" max="32767" attributes="0"/>
+                  <EmptySpace pref="58" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="btn_nuevo" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
-                      <Component id="btn_guardar" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
-                      <Component id="btn_eliminar" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                      <Component id="btn_inscribir" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                      <Component id="btn_anular_inscripcion" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
                       <Component id="btn_salir" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="73" max="-2" attributes="0"/>
@@ -161,25 +157,23 @@
             <Property name="text" type="java.lang.String" value="Gestion de Inscripciones"/>
           </Properties>
         </Component>
-        <Container class="javax.swing.JScrollPane" name="sp_tabla_alumno_materia">
+        <Container class="javax.swing.JScrollPane" name="sp_tabla_gestion_inscripciones">
           <AuxValues>
             <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
           </AuxValues>
 
           <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
           <SubComponents>
-            <Component class="javax.swing.JTable" name="tabla_alumno_materia">
+            <Component class="javax.swing.JTable" name="tabla_gestion_inscripciones">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI" size="14" style="0"/>
                 </Property>
                 <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-                  <Table columnCount="5" rowCount="4">
-                    <Column editable="false" title="DNI" type="java.lang.Object"/>
+                  <Table columnCount="3" rowCount="4">
+                    <Column editable="false" title="DNI" type="java.lang.String"/>
                     <Column editable="false" title="Nombre" type="java.lang.String"/>
-                    <Column editable="false" title="Materia" type="java.lang.Object"/>
-                    <Column editable="false" title="Cuatrimestre" type="java.lang.String"/>
-                    <Column editable="false" title="A&#xf1;o Inscripcion" type="java.lang.Object"/>
+                    <Column editable="false" title="Apellido" type="java.lang.String"/>
                   </Table>
                 </Property>
               </Properties>
@@ -191,7 +185,7 @@
             <Property name="text" type="java.lang.String" value="DNI:"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="lb_materia">
+        <Component class="javax.swing.JLabel" name="lb_materias">
           <Properties>
             <Property name="text" type="java.lang.String" value="Materias:"/>
           </Properties>
@@ -214,7 +208,7 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_nuevoActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="btn_guardar">
+        <Component class="javax.swing.JButton" name="btn_inscribir">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/icons/guardar.png"/>
@@ -222,10 +216,10 @@
             <Property name="text" type="java.lang.String" value="Inscribir"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_guardarActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_inscribirActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="btn_eliminar">
+        <Component class="javax.swing.JButton" name="btn_anular_inscripcion">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/icons/eliminar.png"/>
@@ -233,7 +227,7 @@
             <Property name="text" type="java.lang.String" value="Anular Inscripcion"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_eliminarActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_anular_inscripcionActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btn_buscar">
@@ -249,9 +243,7 @@
         <Component class="javax.swing.JComboBox" name="cb_materias">
           <Properties>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-              <StringArray count="1">
-                <StringItem index="0" value="Materias"/>
-              </StringArray>
+              <StringArray count="0"/>
             </Property>
           </Properties>
           <AuxValues>
@@ -267,6 +259,9 @@
           </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="txt_nombre">
+          <Properties>
+            <Property name="editable" type="boolean" value="false"/>
+          </Properties>
         </Component>
         <Component class="javax.swing.JRadioButton" name="rb_inscripto">
           <Properties>
@@ -284,11 +279,14 @@
             <Property name="text" type="java.lang.String" value="No Inscripto"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField1">
-        </Component>
-        <Component class="javax.swing.JLabel" name="jLabel1">
+        <Component class="javax.swing.JLabel" name="lb_apellido">
           <Properties>
-            <Property name="text" type="java.lang.String" value="A&#xf1;o de Inscripcion:"/>
+            <Property name="text" type="java.lang.String" value="Apellido:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="txt_apellido">
+          <Properties>
+            <Property name="editable" type="boolean" value="false"/>
           </Properties>
         </Component>
       </SubComponents>

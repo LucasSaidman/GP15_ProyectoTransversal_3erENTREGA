@@ -22,7 +22,20 @@ public class alumnoData {
         
         String sql = "INSERT INTO alumno (dni, apellido, nombre, fechaNacimiento, regular) VALUES (?, ?, ?, ?, ?)";
         
-        
+        try (PreparedStatement ps = Conexion.getConexion().prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)) {
+            ps.setInt(1, a.getDni());
+            ps.setString(2, a.getApellido());
+            ps.setString(3, a.getNombre());
+            ps.setDate(4, Date.valueOf(a.getFechaNacimiento()));
+            ps.setBoolean(5, a.isRegular());
+            ps.executeUpdate();
+            try (ResultSet rs = ps.getGeneratedKeys()) {
+                if (rs.next()){
+                    a.setIdAlumno(rs.getInt(1));
+                }
+            }
+        }
+        return a;
     }
     
     public void actualizar(Alumno a) throws SQLException {
